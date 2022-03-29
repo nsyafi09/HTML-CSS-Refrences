@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Field</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Basic Info</legend>
+        <input type="text" placeholder="Name" />
+        <input type="number" placeholder="Number" />
+        <input type="date" />
+      </fieldset>
+      <section>
+        <h2>Story Tell</h2>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Story here"
+        ></textarea>
+      </section>
+      <input type="text" list="factions" />
+      <datalist id="factions">
+        <option data-value="Amber Sea">Amber Sea</option>
+        <option value="2">Azure Sky</option>
+        <option>Darkened Night</option>
+        <option>Hollow Space</option>
+      </datalist>
+      <select name="" id="">
+        <optgroup label="Terrain">
+          <option value="1">Ocean</option>
+          <option value="2">Sky</option>
+          <option value="3">Mountain</option>
+        </optgroup>
+        <optgroup label="Setting">
+          <option value="1">Earth</option>
+          <option value="2">Space</option>
+          <option value="3">Moon</option>
+        </optgroup>
+      </select>
+      <div>
+        <input type="checkbox" id="lifeline" />
+        <label class="label-inline" for="lifeline">Mermaid</label>
+      </div>
+      <div>
+        <input type="checkbox" id="lifeline2" />
+        <label class="label-inline" for="lifeline2">Songstress</label>
+      </div>
+      <div>
+        <input type="radio" name="savelife" id="mermaid" />
+        <label class="label-inline" for="mermaid">Mermaids</label>
+      </div>
+      <div>
+        <input type="radio" name="savelife" id="songstress" />
+        <label class="label-inline" for="songstress">Songstress</label>
+      </div>
+      <input type="range" min="0" max="100" value="60" />
+    </form>
+    <input type="file" multiple accept=".jpg, .jpeg, .png" />
+    <form action="">
+      <input type="text" required minlength="3" maxlength="20" />
+      <button type="">Submit</button>
+    </form>
+  </body>
+</html>
